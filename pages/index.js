@@ -14,6 +14,19 @@ const Index = (props) => (
         </li>
       ))}
     </ul>
+    <style jsx>
+      {`
+        h1, a{
+          font-family: "Arial";
+        }
+        ul{
+          padding:0
+        }
+        li{
+          list-style: none;
+        }
+      `}
+    </style>
   </Layout>
 );
 Index.getInitialProps = async () => {

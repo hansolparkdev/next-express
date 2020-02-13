@@ -1,0 +1,63 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi next-client-pages-loader?page=%2F_app&absolutePagePath=next%2Fdist%2Fpages%2F_app! node_modules/next/dist/client/router.js": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "framework": 2,
+      "be5fc81ee3a915f25ce2083a17df83edb9cf6529": 3,
+      "static/runtime/main.js": 4,
+      "static/runtime/polyfills.js": 5,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\_app.js": 6,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\_error.js": 7,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\about.js": 8,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\index.js": 9,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\p\\[id].js": 10,
+      "e1194695991cf9f30449a72bdb46ae29d9595791": 11,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\_app.js": 12,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\_error.js": 13,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\about.js": 14,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\index.js": 15,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\p\\[id].js": 16,
+      "9e1ab4b5892b634d4ef05a2d735870c3de649429": 3,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\_app.js": 6,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\_error.js": 7,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\about.js": 8,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\index.js": 9,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\p\\[id].js": 10,
+      "a21db98387b414975903e68ba87d1476550a8f26": 11,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\_app.js": 12,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\_error.js": 13,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\about.js": 14,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\index.js": 15,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\p\\[id].js": 16,
+      "aa62084b823122cd39a4da9a9942e9e059e0a7f2": 3,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\_app.js": 6,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\_error.js": 7,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\about.js": 8,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\index.js": 9,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\p\\[id].js": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

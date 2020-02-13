@@ -1,0 +1,67 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/about.js": 0,
+      "multi private-next-pages/index.js": 1,
+      "multi private-next-pages/p/[id].js": 2,
+      "multi next/dist/pages/_app": 3,
+      "multi next/dist/pages/_error": 4,
+      "multi next/dist/pages/_document": 5
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5
+    }
+  },
+  "chunks": {
+    "byName": {
+      "init-server.js": 0,
+      "on-error-server.js": 1,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\_app.js": 2,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\_document.js": 3,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\_error.js": 4,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\about.js": 5,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\index.js": 6,
+      "static\\NZrp22nalIw56hLTaf0JB\\pages\\p\\[id].js": 7,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\_app.js": 8,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\_document.js": 9,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\_error.js": 10,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\about.js": 11,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\index.js": 12,
+      "static\\HBDbkrT0vomu_Qdpyuglh\\pages\\p\\[id].js": 13,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\_app.js": 2,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\_document.js": 3,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\_error.js": 4,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\about.js": 5,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\index.js": 6,
+      "static\\kY81QTOept-BZgB2r72qY\\pages\\p\\[id].js": 7,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\_app.js": 8,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\_document.js": 9,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\_error.js": 10,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\about.js": 11,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\index.js": 12,
+      "static\\BXi0KOa8Ye5aV70P6kNSE\\pages\\p\\[id].js": 13,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\_app.js": 2,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\_document.js": 3,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\_error.js": 4,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\about.js": 5,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\index.js": 6,
+      "static\\3OcH8QBGpLQDXvmQLRlsx\\pages\\p\\[id].js": 7
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  }
+}

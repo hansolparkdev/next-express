@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -640,7 +640,13 @@ class Link extends _react.Component {
     // "<page>/index.html" directly.
 
 
-    if (false) { var rewriteUrlForNextExport; }
+    if (true) {
+      var rewriteUrlForNextExport = __webpack_require__(/*! ../next-server/lib/router/rewrite-url-for-export */ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js").rewriteUrlForNextExport;
+
+      if (props.href && typeof __NEXT_DATA__ !== 'undefined' && __NEXT_DATA__.nextExport) {
+        props.href = rewriteUrlForNextExport(props.href);
+      }
+    }
 
     return _react.default.cloneElement(child, props);
   }
@@ -965,6 +971,40 @@ exports.RouterContext = React.createContext(null);
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+function rewriteUrlForNextExport(url) {
+  const [pathname, hash] = url.split('#'); // tslint:disable-next-line
+
+  let [path, qs] = pathname.split('?');
+
+  if (path) {
+    path = path.replace(/\/$/, ''); // Append a trailing slash if this path does not have an extension
+
+    if (!/\.[^/]+\/?$/.test(path)) path += `/`;
+  }
+
+  if (qs) path += '?' + qs;
+  if (hash) path += '#' + hash;
+  return path;
+}
+
+exports.rewriteUrlForNextExport = rewriteUrlForNextExport;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/router/router.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/router/router.js ***!
@@ -1130,9 +1170,11 @@ class Router {
 
 
   static _rewriteUrlForNextExport(url) {
-    if (false) {} else {
-      return url;
-    }
+    if (true) {
+      const rewriteUrlForNextExport = __webpack_require__(/*! ./rewrite-url-for-export */ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js").rewriteUrlForNextExport;
+
+      return rewriteUrlForNextExport(url);
+    } else {}
   }
 
   update(route, mod) {
@@ -1209,7 +1251,14 @@ class Router {
       let as = typeof _as === 'object' ? utils_1.formatWithValidation(_as) : _as; // Add the ending slash to the paths. So, we can serve the
       // "<page>/index.html" directly for the SSR page.
 
-      if (false) {}
+      if (true) {
+        const rewriteUrlForNextExport = __webpack_require__(/*! ./rewrite-url-for-export */ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js").rewriteUrlForNextExport; // @ts-ignore this is temporarily global (attached to window)
+
+
+        if (__NEXT_DATA__.nextExport) {
+          as = rewriteUrlForNextExport(as);
+        }
+      }
 
       this.abortComponentLoad(as); // If the url change is only related to a hash change
       // We should not proceed. We should only change the state.
@@ -1935,7 +1984,7 @@ Post.getInitialProps = async context => {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/p/[id].js ***!
   \*******************************/
